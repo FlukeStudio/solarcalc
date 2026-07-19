@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#faf9f5"/>
+      <stop offset="100%" stop-color="#fef6e3"/>
+    </linearGradient>
+    <linearGradient id="logo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#e8a517"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c48a0c"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Logo -->
+  <rect x="60" y="60" width="100" height="100" rx="28" fill="url(#logo)"/>
+  <circle cx="110" cy="110" r="30" fill="#fff" opacity="0.9"/>
+  <g stroke="#fff" stroke-width="3.5" stroke-linecap="round">
+    <line x1="110" y1="62"  x2="110" y2="78"/>
+    <line x1="110" y1="142" x2="110" y2="158"/>
+    <line x1="62"  y1="110" x2="78"  y2="110"/>
+    <line x1="142" y1="110" x2="158" y2="110"/>
+    <line x1="76" y1="76"  x2="88"  y2="88"/>
+    <line x1="132" y1="132" x2="144" y2="144"/>
+    <line x1="76" y1="144" x2="88"  y2="132"/>
+    <line x1="132" y1="88"  x2="144" y2="76"/>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="240" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="800" letter-spacing="-2" fill="url(#title)">Solar Panel Cost &amp; Savings</text>
+  <text x="60" y="305" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="800" letter-spacing="-2" fill="url(#title)">Calculator — 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="375" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#6b6658">Free · Independent · No Email Required · All 50 US States</text>
+
+  <!-- Feature pills -->
+  <rect x="60" y="420" width="220" height="48" rx="24" fill="#fff" stroke="#e6e0d4"/>
+  <text x="170" y="451" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="600" fill="#1a1a14" text-anchor="middle">☀️ System Sizing</text>
+
+  <rect x="300" y="420" width="220" height="48" rx="24" fill="#fff" stroke="#e6e0d4"/>
+  <text x="410" y="451" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="600" fill="#1a1a14" text-anchor="middle">💰 30% Tax Credit</text>
+
+  <rect x="540" y="420" width="220" height="48" rx="24" fill="#fff" stroke="#e6e0d4"/>
+  <text x="650" y="451" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="600" fill="#1a1a14" text-anchor="middle">🔋 Battery ROI</text>
+
+  <rect x="780" y="420" width="220" height="48" rx="24" fill="#fff" stroke="#e6e0d4"/>
+  <text x="890" y="451" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="600" fill="#1a1a14" text-anchor="middle">📊 25-Year Savings</text>
+
+  <!-- Bottom bar -->
+  <rect x="60" y="510" width="250" height="40" rx="20" fill="#fef6e3" stroke="#f0d78c"/>
+  <text x="185" y="536" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#c48a0c" text-anchor="middle">🔒 Zero Data Collection</text>
+
+  <rect x="330" y="510" width="220" height="40" rx="20" fill="#fef6e3" stroke="#f0d78c"/>
+  <text x="440" y="536" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#c48a0c" text-anchor="middle">📊 NREL PVWatts v8</text>
+
+  <!-- URL -->
+  <text x="1140" y="600" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#a09b8d" text-anchor="end">solarcalc.cmprly.com</text>
+</svg>
