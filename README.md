@@ -2,7 +2,7 @@
 
 Free, independent solar panel cost & savings calculator for US homeowners. No email, no phone, no sales calls — just the numbers.
 
-**[Live → solarcalc-3z2.pages.dev](https://solarcalc-3z2.pages.dev)**
+**[Live → solarcalc.cmprly.com](https://solarcalc.cmprly.com)**
 
 ## Features
 
