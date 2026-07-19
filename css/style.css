@@ -3,41 +3,13 @@
    Theme:  Solar Gold  ·  Light + warm accent
    ═══════════════════════════════════════════════ */
 
-/* Self-hosted Inter fonts */
+/* Self-hosted Inter font (Latin subset WOFF2, 48KB — all weights) */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 800;
   font-display: swap;
-  src: url('../fonts/inter-400.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../fonts/inter-500.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('../fonts/inter-600.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/inter-700.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url('../fonts/inter-800.ttf') format('truetype');
+  src: url('../fonts/inter-latin.woff2') format('woff2');
 }
 
 :root {
