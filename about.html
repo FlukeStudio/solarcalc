@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — SolarCalc</title>
+<meta name="description" content="About SolarCalc — a free, independent solar calculator for US homeowners. No email, no phone, no sales calls. Just the numbers.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+  .about-section { max-width: 700px; margin: 0 auto; }
+  .about-section h3 { margin-top: 28px; }
+  .about-section p, .about-section li { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <a href="/" style="text-decoration:none;color:inherit;">
+      <div class="header-logo">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" fill="#fff" opacity="0.9"/><g stroke="#fff" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.9" y1="4.9" x2="7.8" y2="7.8"/><line x1="16.2" y1="16.2" x2="19.1" y2="19.1"/><line x1="4.9" y1="19.1" x2="7.8" y2="16.2"/><line x1="16.2" y1="7.8" x2="19.1" y2="4.9"/></g></svg>
+      </div>
+    </a>
+    <h1>About SolarCalc</h1>
+  </header>
+
+  <div class="card about-section">
+    <h2>Why We Built This</h2>
+    <p>Every other "free solar calculator" online does the same thing: asks for your email or phone number, then sells you to installers. We got tired of it.</p>
+    <p><strong>SolarCalc is different:</strong> no email, no phone, no sales calls. You enter your numbers, you get your estimate, you leave. That's it.</p>
+
+    <h3>Our Data</h3>
+    <p>Every number you see comes from authoritative public sources:</p>
+    <ul>
+      <li><strong>Peak Sun Hours</strong> — NREL PVWatts v8 / National Solar Radiation Database (2026)</li>
+      <li><strong>Electricity Rates</strong> — US Energy Information Administration (July 2026)</li>
+      <li><strong>Installation Costs</strong> — SEIA / EnergySage Q1 2026 Marketplace Data</li>
+      <li><strong>Federal Tax Credit</strong> — IRS Section 25D, 30% ITC through 2032</li>
+      <li><strong>State Incentives</strong> — DSIRE, state energy offices, utility filings</li>
+      <li><strong>Battery Costs</strong> — EnergySage marketplace (Feb 2026), NREL ATB</li>
+    </ul>
+
+    <h3>Is the estimate accurate?</h3>
+    <p>For a standard south-facing roof with no significant shading, our estimates are within ±10% of professional installer quotes. This is an independent estimate, not a binding quote. Solar installation costs vary with roof complexity, local permit fees, and installer competition — always get 3+ quotes before deciding.</p>
+
+    <h3>How We Make Money</h3>
+    <p>SolarCalc is free. We may earn a small commission if you choose to compare quotes through EnergySage (at no cost to you). We do not sell your data. We do not run ads that track you.</p>
+
+    <h3>Open Source</h3>
+    <p>SolarCalc is open source (MIT license). You can view, modify, and run the entire codebase yourself. <a href="https://github.com/FlukeStudio/solarcalc" style="color:var(--accent-deep);">View on GitHub →</a></p>
+
+    <h3>Contact</h3>
+    <p>Questions, suggestions, or found a bug? <strong>Open an issue on <a href="https://github.com/FlukeStudio/solarcalc/issues" style="color:var(--accent-deep);">GitHub</a></strong>.</p>
+  </div>
+
+  <div style="text-align:center;margin-top:24px;">
+    <a href="/" style="color:var(--accent-deep);font-weight:600;">← Back to Calculator</a>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 SolarCalc — Free &amp; Independent</p>
+  </footer>
+</div>
+</body>
+</html>

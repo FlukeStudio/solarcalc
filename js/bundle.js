@@ -1,4 +1,4 @@
-// SolarCalc Bundle
+// SolarCalc Bundle v3
 const SolarCalc = window.SolarCalc || {};
 
 
@@ -1279,19 +1279,42 @@ SolarCalc.App = (function() {
 
   function registerModule(name, initFn) {
     // Future: dynamically load and init modules
-    console.log(`[SolarCalc] Module registered: ${name}`);
-    if (typeof initFn === 'function') initFn();
   }
 
-    // ---- Public API ----
-    return {
-      init,
-      calculate,
-      setMonthlyBill,
-      toggleAdvanced,
-      switchTab,
-      registerModule
-    };
+  // ==========================================
+  //  SHARE RESULTS (called from share buttons)
+  // ==========================================
+
+  function shareResults(platform) {
+    var url    = window.location.href;
+    var title  = document.title;
+    var text   = '';
+    var takeEl = document.getElementById('takeaway');
+    if (takeEl) text = takeEl.textContent.substring(0, 200) + '...';
+
+    if (platform === 'twitter') {
+      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank');
+    } else if (platform === 'facebook') {
+      window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), '_blank');
+    } else if (platform === 'copy') {
+      navigator.clipboard.writeText(url).then(function() {
+        alert('Link copied! Share it anywhere.');
+      }).catch(function() {
+        prompt('Copy this link:', url);
+      });
+    }
+  }
+
+  // ---- Public API ----
+  return {
+    init,
+    calculate,
+    setMonthlyBill,
+    toggleAdvanced,
+    switchTab,
+    shareResults,
+    registerModule
+  };
 
   })();
 

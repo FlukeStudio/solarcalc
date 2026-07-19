@@ -12,8 +12,42 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Free Solar Panel Cost &amp; Savings Calculator (2026)">
+<meta property="og:description" content="Independent solar calculator for US homeowners. No email, no phone, no sales calls. Covers all 50 states with 2026 NREL data.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://solarcalc.cmprly.com/">
+<meta property="og:image" content="https://solarcalc.cmprly.com/favicon.svg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Solar Panel Cost &amp; Savings Calculator (2026)">
+<meta name="twitter:description" content="Independent solar calculator. No email required. Covers all 50 US states.">
+<meta name="twitter:image" content="https://solarcalc.cmprly.com/favicon.svg">
 
 <!-- ═══════════════ STATIC JSON-LD ═══════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://solarcalc.cmprly.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solar Calculator",
+      "item": "https://solarcalc.cmprly.com/"
+    }
+  ]
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -238,6 +272,16 @@
         Compare Free Quotes on EnergySage →
       </a>
     </div>
+
+    <!-- Share -->
+    <div style="text-align:center;margin-top:16px;" id="shareBlock">
+      <p style="font-size:0.78rem;color:var(--text-faint);margin-bottom:6px;">📤 Share your results</p>
+      <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+        <button class="pill" onclick="SolarCalc.App.shareResults('twitter')" title="Share on X (Twitter)">𝕏 Share on X</button>
+        <button class="pill" onclick="SolarCalc.App.shareResults('facebook')" title="Share on Facebook">📘 Facebook</button>
+        <button class="pill" onclick="SolarCalc.App.shareResults('copy')" title="Copy link">🔗 Copy Link</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -296,6 +340,13 @@
 <footer class="footer">
   <p><strong>SolarCalc</strong> — Free &amp; Independent Solar Estimates</p>
   <p style="margin-top:4px;">Data: NREL PVWatts v8 · US EIA July 2026 · SEIA/EnergySage Q1 2026 · IRS Section 25D</p>
+  <p style="margin-top:4px;">
+    <a href="about.html" style="color:var(--text-faint);">About</a>
+    &nbsp;·&nbsp;
+    <a href="privacy.html" style="color:var(--text-faint);">Privacy</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/FlukeStudio/solarcalc" style="color:var(--text-faint);" target="_blank" rel="noopener">GitHub</a>
+  </p>
   <p style="margin-top:2px;">This is an independent estimate, not a binding quote. Always consult a licensed solar installer.</p>
 </footer>
 
